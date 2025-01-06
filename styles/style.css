@@ -1,0 +1,154 @@
+body {
+    font-family: 'quicksand',sans-serif;
+
+    margin: 0;
+    padding: 0;
+  }
+   
+  h2, h3 {
+    color: #024fa2;
+  }
+   
+  footer {
+    padding: 20px;
+    color: white;
+    background-color: #024fa2;
+    text-align: center;
+    font-weight: bold;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+
+#content {
+  flex: 5;
+  
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1;
+
+}
+
+header {
+  display: inline;
+}
+
+.jumbotron {
+    background-image: url('https://images.bisnis.com/posts/2023/09/22/1697516/monas---gedung-jakarta---bi-dul-23-status-kota-jakarta-09_20230916020749995.jpg');;
+    background-size: cover;
+    background-position: center; /* Posisi gambar di tengah-tengah */
+    background-repeat: no-repeat; /* Tidak mengulangi gambar */
+}
+
+.content1{
+  font-size: 20px;
+  padding: 80px;
+  text-align: center;
+  color: #000000;
+  z-index: 1;
+  font-weight: bold;
+}
+
+nav ul {
+  padding-inline: 2rem;
+  display: flex;
+
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav {
+  background-color: #024fa2;
+  padding: 5px;
+  
+ 
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+}
+
+main {
+  padding: 20px;
+
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+ 
+  color: white;
+}
+ 
+nav a:hover {
+  font-weight: bold;
+}
+
+nav i:hover {
+  filter: invert(100%);
+}
+
+hr{
+ margin: 0;
+}
+
+.p1 {
+  text-indent: 1em;
+  line-height: 1.5em;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+
+  padding: 20px;
+}
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+ 
+  main aside {
+    align-self: center;
+  }
+}
+ 
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+ 
+  main aside {
+    align-self: stretch;
+  }
+}
